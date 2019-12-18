@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sports Council | BITS Pilani</title>
+        <link rel="stylesheet" type="text/css" href="./css/index.css" >
+        <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <header>
+            <div class="logo"></div>
+            <div class="title">
+                <p>Sports Council</p>
+                <p>BITS Pilani</p>
+            </div>
+            <div class="side-ham">
+                <div class="ham-line"></div>
+                <div class="ham-line"></div>
+                <div class="ham-line"></div>
+            </div>
+        </header>
+
+        <!--Page Content-->
+        <div class="main-content">
+            <div class="page-title">
+                <p>Badminton @ BITS Pilani</p>
+            </div>
+
+            <ul class="mini-nav">
+                <li>About</li>
+                <li>Bulletin</li>
+                <li>Team 2019-20</li>
+                <li>Hall of Fame</li>
+            </ul>
+
+            <!--Swiper/Slider-->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <!--Card-->
+            <div class="card-box">
+                <div class="card">
+                    <p>
+                        Badminton is inclusive to all genders and levels of experience. The team competes throughout the year in annual
+                        BITS
+                        Open Sports Meet and against other universities in various outstation tournaments. There is also an
+                        intra-college level
+                        badminton tournament at iBOSM for badminton enthusiasts at our college.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <div></div>
+        </footer>
+
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                cssMode: true,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination'
+                },
+                mousewheel: true,
+                keyboard: true,
+            });
+        </script>
+    </body>
+</html>
