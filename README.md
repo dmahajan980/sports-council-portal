@@ -1,1 +1,4 @@
-# sports-council-portal
+permalink: /index.html
+
+# Sports Council Portal
+
