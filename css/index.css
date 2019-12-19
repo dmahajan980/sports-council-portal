@@ -19,6 +19,7 @@ header {
     left: 0;
     width: 100vw;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .logo {
@@ -243,6 +244,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 
 footer div {
