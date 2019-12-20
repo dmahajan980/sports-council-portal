@@ -37,6 +37,14 @@ header {
     margin-right: 2vw;
 }
 
+.shortform {
+    display: block;
+}
+
+.fullform {
+    display: none;
+}
+
 .side-ham {
     cursor: pointer;
 }
@@ -99,6 +107,10 @@ body {
     font-size: 2.2rem;
 }
 
+li.tr {
+    display: none;
+}
+
 /* Slider */
 .swiper-container {
     width: 100%;
@@ -124,7 +136,7 @@ body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    background-image: url('../assets/image.jpg');
+    background-image: url('../assets/bkg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -427,7 +439,92 @@ footer div {
     background-size: cover;
 }
 
+/* ******************************************************** */
+/* ******************************************************** */
+/* Desktop Queries */
+@media screen and (min-width: 600px) and (orientation: landscape) {
+    body {
+        overflow-x: hidden;
+    }
 
+    body::-webkit-scrollbar {
+        width: 0.5vw;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background: #555; 
+    }
 
+    header {
+        padding: 0 2vw;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 11vh;
+        justify-content: flex-start;
+    }
 
+    .logo {
+        margin-right: 25px;
+    }
 
+    .side-ham {
+        display: none;
+    }
+
+    header > .title > p {
+        font-size: 1.55rem;
+    }
+
+    .shortform {
+        display: none;
+    }
+
+    header > .title > .fullform {
+        display: block;
+        font-size: 1.35rem;
+    }
+
+    .main-content {
+        margin-top: 11vh;
+    }
+
+    .page-title p {
+        font-size: 1.8rem;
+        margin-left: 2.3vw;
+    }
+
+    .mini-nav {
+        padding: 4px 0;
+        box-sizing: border-box;
+    }
+
+    .mini-nav > li {
+        font-size: 1.3rem;
+        cursor: pointer;
+        width: 25vw;
+        border-right: 1px solid white;
+    }
+
+    /* .border {
+        content: '';
+        background-color: white;
+        height: 98%;
+        width: 1px;
+    } */
+
+    li.t {
+        display: none;
+    }
+
+    li.tr {
+        display: flex;
+    }
+
+    .main-content .swiper-button-next {
+        right: 0.5vw;
+    }
+
+    footer {
+        position: relative;
+    }
+}
