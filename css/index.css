@@ -279,7 +279,6 @@ body {
 
 .members {
     padding: 40px 90px 40px 60px;
-    margin-bottom: 8vh;
 }
 
 .members p {
@@ -333,6 +332,76 @@ body {
 
 .buttons .inactive {
     background: rgba(89, 73, 158, 0.2);
+}
+
+/* Hall of Fame */
+.hof {
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 33vh;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    margin-top: 1vh;
+}
+
+.hover {
+    background: linear-gradient(180deg, rgba(89, 73, 158, 0.95) 22.01%, rgba(89, 86, 201, 0.5) 132.01%);
+    height: 100%;
+    width: 100%;
+    padding: 60px 7vw;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+
+    /* top: 25vh;
+    padding-top: 25px; */
+}
+
+/* Click State */
+.hof-card-box .card:nth-child(2) .hover {
+    top: 25vh;
+    padding-top: 25px;
+    background: linear-gradient(180deg, rgba(89, 86, 201, 0.75) 22.01%, rgba(89, 86, 201, 0.5) 132.01%);
+}
+
+.hof-card-box {
+    margin-bottom: 8vh;
+}
+
+.hof .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 3.1vh;
+}
+
+.hof .card-title p {
+    font-size: 3.8rem;
+}
+
+.hof .card-title div {
+    background-image: url('../assets/down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 2vh;
+    width: 3vh;
+}
+
+.hof .card-title .none {
+    visibility: hidden;
+}
+
+.features ul li {
+    color: white;
+    font-size: 2.3rem;
+    margin-left: 2vw;
+    margin-bottom: 0.8vh;
 }
 
 /* Footer */
