@@ -585,12 +585,56 @@ footer div {
         text-align: justify;
     }
 
-    .container {
-        border-radius: 15px;
-    }
-
     .team-image {
         height: 80vh;
+    }
+
+    .bulletin {
+        height: 100vh;
+        background-image: url('../assets/bkg2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bulletin .page-title {
+        color: white;
+        padding-top: 9vh;
+    }
+
+    .timeline {
+        margin-left: 5vw;
+    }
+
+    .timeline::after {
+        width: 4px;
+        border-radius: 2px;
+    }
+
+    .container {
+        padding: 25px;
+        width: 55vw;
+        margin-left: 80px;
+        margin-right: auto;
+    }
+
+    .container > .content > p {
+        font-size: 1.2rem;
+    }
+
+    .container > .content > h5 {
+        font-size: 1.05rem;
+        margin-top: 8px;
+    }
+
+    .timeline::after, .container::after {
+        background-color: white;
+    }
+
+    .container::after {
+        height: 20px;
+        width: 20px;    
+        right: calc(55vw + 68px);
     }
 
     footer {
