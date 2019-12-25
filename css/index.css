@@ -703,11 +703,11 @@ footer div {
     margin-top: 5vh;
   }
   .hof {
-    width: 20vw;
-    height: 25vh;
+    width: 330px;
+    height: 210px;
   }
   .hof .card-title p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .hof .card-title {
     width: 100%;
@@ -717,5 +717,9 @@ footer div {
   }
   .features ul li {
     font-size: 1rem;
+  }
+  .hof-card-box .card:nth-child(2) .hover {
+    top: 172px;
+    padding-top: 0;
   }
 }
