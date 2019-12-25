@@ -43,13 +43,13 @@
       </ul>
 
       <!--Swiper/Slider-->
-      <div class="swiper-container">
+      <div class="swiper-container firstswp">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
+          <div class="swiper-slide" id="i1"></div>
+          <div class="swiper-slide" id="i2"></div>
+          <div class="swiper-slide" id="i3"></div>
           ...
         </div>
         <!-- If we need pagination -->
@@ -71,8 +71,13 @@
           </p>
         </div>
       </div>
-      <div class="bulltnencl">
-        <!--Bulletin-->
+      <!--Bulletin-->
+      <div class="page-title">
+        <p>Bulletin</p>
+      </div>
+
+      <!--Bulletin-->
+      <div class="bulletin">
         <div class="page-title">
           <p>Bulletin</p>
         </div>
@@ -85,19 +90,19 @@
                 Trials Scheduled for Boys and Girls Teams from 9th-11th January
                 2020
               </p>
-              <h6 class="eventdate">JANUARY 4, 2020</h6>
+              <h5>JANUARY 4, 2020</h5>
             </div>
           </div>
           <div class="container card">
             <div class="content">
               <p>Boys’ Team placed 1st at BITS Open Sports Meet 2019</p>
-              <h6 class="eventdate">october 14, 2019</h6>
+              <h5>october 14, 2019</h5>
             </div>
           </div>
           <div class="container card">
             <div class="content">
               <p>Girls’ Team placed 2nd at BITS Open Sports Meet 2019</p>
-              <h6 class="eventdate">October 10, 2019</h6>
+              <h5>october 10, 2019</h5>
             </div>
           </div>
           <div class="container card">
@@ -106,14 +111,14 @@
                 John and Jane take over as Captains for the Session 2019-20 of
                 BITS Pilani’s Badminton Team.
               </p>
-              <h6 class="eventdate">september 4, 2019</h6>
+              <h5>september 4, 2019</h5>
             </div>
           </div>
         </div>
       </div>
       <!--Team-->
       <div class="page-title">
-        <p>Team 2019-20</p>
+        <p>Team Roster 2019-20</p>
         <div class="social-box">
           <a class="social" href="www.facebook.com">
             <img src="./assets/fb.svg" />
@@ -125,7 +130,21 @@
       </div>
 
       <!--Team Image-->
-      <div class="team-image"></div>
+      <div class="swiper-container secondswp">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" id="t1"></div>
+          <div class="swiper-slide" id="t2"></div>
+          <div class="swiper-slide" id="t3"></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
 
       <!--B/G-->
       <div class="bg">
@@ -168,42 +187,76 @@
 
       <!--Hall of Fame-->
       <div class="hof-card-box">
-        <div class="card hof">
-          <div class="hover">
-            <div class="card-title">
-              <div class="none"></div>
-              <p>John Doe</p>
-              <div class="down"></div>
+        <div class="card-container">
+          <div class="card hof">
+            <div class="hover">
+              <div class="card-title">
+                <div class="none"></div>
+                <p>Jane Doe</p>
+                <div class="down"></div>
+              </div>
+              <div class="features">
+                <ul>
+                  <li>Girls’ Captain 2017-18</li>
+                  <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
+                  <li>Silver Medal - Rajasthan State U-21</li>
+                </ul>
+              </div>
             </div>
-            <div class="features">
-              <ul>
-                <li>Boys’ Captain 2017-18</li>
-                <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
-                <li>Silver Medal - Rajasthan State U-21</li>
-              </ul>
+          </div>
+          <div class="card hof">
+            <div class="hover">
+              <div class="card-title">
+                <div class="none"></div>
+                <p>Jane Doe</p>
+                <div class="down"></div>
+              </div>
+              <div class="features">
+                <ul>
+                  <li>Girls’ Captain 2017-18</li>
+                  <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
+                  <li>Silver Medal - Rajasthan State U-21</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="card hof">
-          <div class="hover">
-            <div class="card-title">
-              <div class="none"></div>
-              <p>Jane Doe</p>
-              <div class="down"></div>
+        <div class="card-container">
+          <div class="card hof">
+            <div class="hover">
+              <div class="card-title">
+                <div class="none"></div>
+                <p>Jane Doe</p>
+                <div class="down"></div>
+              </div>
+              <div class="features">
+                <ul>
+                  <li>Girls’ Captain 2017-18</li>
+                  <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
+                  <li>Silver Medal - Rajasthan State U-21</li>
+                </ul>
+              </div>
             </div>
-            <div class="features">
-              <ul>
-                <li>Girls’ Captain 2017-18</li>
-                <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
-                <li>Silver Medal - Rajasthan State U-21</li>
-              </ul>
+          </div>
+          <div class="card hof">
+            <div class="hover">
+              <div class="card-title">
+                <div class="none"></div>
+                <p>Jane Doe</p>
+                <div class="down"></div>
+              </div>
+              <div class="features">
+                <ul>
+                  <li>Girls’ Captain 2017-18</li>
+                  <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
+                  <li>Silver Medal - Rajasthan State U-21</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <!--Footer-->
     <footer>
       <div></div>
