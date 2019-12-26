@@ -643,12 +643,13 @@ footer .divider {
   }
 
   .bulletin {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../assets/bkg2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    overflow-y: scroll;
+    overflow-y: visible;
+    padding-bottom: 5vh;
   }
 
   .bulletin .page-title {
