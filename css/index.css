@@ -472,7 +472,6 @@ li.tr {
   margin-left: 2vw;
   margin-bottom: 0.8vh;
 }
-
 /* Footer */
 footer {
   position: fixed;
@@ -700,6 +699,7 @@ footer .divider {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../assets/hofbg.png");
+    position: relative;
   }
   .bg {
     width: 25vw;
@@ -788,5 +788,20 @@ footer .divider {
   }
   footer .divider {
     display: inline-block;
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #414141;
+    padding: 3px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 46%;
+    top: 226px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 1px rgba(122, 122, 122, 0.25);
   }
 }
