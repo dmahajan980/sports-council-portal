@@ -773,6 +773,7 @@ footer .divider {
 
   .page-title {
     height: 8vh;
+    justify-content: flex-start;
   }
 
   .page-title p {
@@ -826,6 +827,14 @@ footer .divider {
     margin-top: 1.5vh;
     height: 75vh;
     box-shadow: none;
+  }
+
+  .social-box {
+    margin-left: 3vw;
+  }
+
+  .social img {
+    margin-right: 2vw;
   }
 
   .secondswp {
@@ -915,7 +924,9 @@ footer .divider {
   .container::after {
     height: 20px;
     width: 20px;
-    right: calc(55vw + 68px);
+    right: calc(55vw + 66px);
+    background-color: #59499e;
+    border: 2px solid white;
   }
   .hof-card-box {
     width: 100%;
@@ -928,14 +939,16 @@ footer .divider {
     /* padding-top: 5vh; */
   }
   .bg {
-    width: 25vw;
+    width: 20vw;
+    border-radius: 2px;
   }
   .boys,
   .girls {
     font-size: 1.3rem;
+    border-radius: 2px;
   }
   .members {
-    width: 60%;
+    width: 95vw;
   }
   .players p,
   .captain p {
