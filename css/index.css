@@ -36,7 +36,7 @@
 
 .navbar > .su-logo {
   height: 100%;
-  width: 70%;
+  width: 47%;
   /*won't work if you don't remove flex from .navbar*/
   float: left;
   display: flex;
@@ -61,7 +61,7 @@
   flex-flow: column;
   color: white;
   font-size: 0.7em;
-  padding-left: 2%;
+  padding-left: 1.1vw;
 }
 
 .navbar > .su-logo > .title > p {
@@ -71,19 +71,6 @@
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  list-style-type: none;
-
-  /*.navbar > .nav-links {
-  width: 30%;
-  display: flex;
-  justify-content: space-evenly;
-}*/
 }
 
 .navbar > .nav-links a {
@@ -362,7 +349,7 @@ li.tr {
   padding: 40px;
   background-color: white;
   box-sizing: border-box;
-  font-size: 2rem;
+  font-size: 1.3rem;
   line-height: 1.4;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
 }
@@ -438,6 +425,10 @@ li.tr {
   height: 33vh;
   width: 100vw;
   box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.secondswp {
+  margin-top: 0;
 }
 
 .bg {
@@ -528,6 +519,11 @@ li.tr {
 }
 
 /* Hall of Fame */
+.hof-swiper {
+  height: auto;
+  box-shadow: none;
+}
+
 .hof {
   background-image: url("../assets/bg.png");
   background-repeat: no-repeat;
@@ -623,6 +619,7 @@ li.tr {
   font-size: 2.3rem;
   margin-left: 2vw;
   margin-bottom: 0.8vh;
+  text-align: left;
 }
 /* Footer */
 footer {
@@ -648,19 +645,75 @@ footer span {
 footer .divider {
   display: none;
 }
+
+.hof-swiper .swiper-slide {
+  width: 90vw !important;
+  height: 33vh;
+}
+
+.navbar .options {
+  display: none;
+}
+
+.navbar .nav-options {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /* display: none; */
+  position: fixed;
+  width: 100vw;
+  top: 12vh;
+  left: 0;
+  background-color: #59499e;
+  border-top: 1px solid white;
+  z-index: 20;
+  height: auto;
+
+  /*.navbar > .nav-links {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}*/
+}
+
+.navbar .nav-options li:nth-child(1) {
+  border: none;
+}
+
+.navbar .nav-options li {
+  font-size: 3rem;
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid white;
+  margin: 0 15vw;
+}
 /* ******************************************************** */
 /* ******************************************************** */
 /* Desktop Queries */
 @media screen and (min-width: 600px) and (orientation: landscape) {
   .navbar .su-logo {
-    margin-left: 1%;
+    margin-left: 0;
   }
   .menu-icon {
     display: none;
   }
 
-  .navbar ul {
-    display: none;
+  .navbar ul.options {
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    list-style-type: none;
+  }
+  
+  .navbar ul li {
+    margin-left: 25px;
+    cursor: pointer;
+  }
+  .title {
+    width: 30vw;
   }
   .navbar .su-logo .logo {
     height: 6.5vh;
@@ -685,6 +738,10 @@ footer .divider {
     width: 100vw;
     height: 9vh;
     justify-content: flex-start;
+  }
+
+  .navbar .nav-options {
+    display: none;
   }
 
   .logo {
@@ -772,7 +829,7 @@ footer .divider {
   }
 
   .secondswp {
-    margin-top: 1vh;
+    margin-top: 0;
     height: 82vh;
     box-shadow: none;
   }
@@ -789,7 +846,7 @@ footer .divider {
 
   .card-box {
     position: absolute;
-    top: 41vh;
+    top: 44vh;
     right: 0;
     z-index: 5;
   }
@@ -862,25 +919,27 @@ footer .divider {
   }
   .hof-card-box {
     width: 100%;
-    height: 80vh;
+    height: 78vh;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../assets/hofbg.png");
     position: relative;
+    box-sizing: border-box;
+    /* padding-top: 5vh; */
   }
   .bg {
     width: 25vw;
   }
   .boys,
   .girls {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .members {
     width: 60%;
   }
   .players p,
   .captain p {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   .hof-card-box {
     margin-bottom: 0;
@@ -890,9 +949,26 @@ footer .divider {
     display: flex;
     margin-top: 5vh;
   }
-  .hof {
-    width: 330px;
-    height: 210px;
+  .buttons {
+    max-width: 150px;
+  }
+  div.hof-swiper {
+    box-shadow: none;
+    margin-top: 0;
+    height: 72vh;
+    width: 60vw;
+    max-width: 740px;
+    margin-left: 2.75vw;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+  }
+  .hof-swiper .hof {
+    width: 330px !important;
+    height: 215px;
+    margin: 30px 20px;
+    /* box-shadow: none; */
+      /* height: 15vw;
+      width: 25vw; */
   }
   .hof .card-title p {
     font-size: 1.5rem;
@@ -915,6 +991,9 @@ footer .divider {
     left: 0;
     transition: top 500ms ease-in, padding 500ms ease-in;
   }
+  .hover ul {
+    text-align: left;
+  }
   .hof:hover .hover {
     background: linear-gradient(
       180deg,
@@ -923,7 +1002,7 @@ footer .divider {
     );
     height: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 25px 5px;
     box-sizing: border-box;
     position: absolute;
     left: 0;
@@ -941,7 +1020,7 @@ footer .divider {
     font-size: 1.3rem;
   }
   .container > .content > h6 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   footer {
     display: block;

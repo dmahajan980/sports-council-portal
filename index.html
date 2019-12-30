@@ -39,6 +39,13 @@
           </p>
         </div>
       </div>
+      <ul class="options">
+        <li>About</li>
+        <li>Sports</li>
+        <li>Calendar</li>
+        <li>iBOSM</li>
+        <li>Developers</li>
+      </ul>
 
       <!--add this-->
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -47,11 +54,18 @@
       ></label>
 
       <!--change to ul-->
-      <ul class="nav-links">
+      <ul class="nav-options">
+        <li>About</li>
+        <li>Sports</li>
+        <li>Calendar</li>
+        <li>iBOSM</li>
+        <li>Developers</li>
+      </ul>
+      <!-- <ul class="nav-links">
         <li><a href="#" class="a">Link1</a></li>
         <li><a href="#" class="a">Link2</a></li>
         <li><a href="#" class="a">Link3</a></li>
-      </ul>
+      </ul> -->
     </div>
     <!--Page Content-->
     <div class="main-content">
@@ -227,73 +241,73 @@
 
       <!--Hall of Fame-->
       <div class="hof-card-box">
-        <div class="arrow">
+        <!-- <div class="arrow">
           <img src="./assets/next.svg" />
-        </div>
-        <div class="card-container">
-          <div class="card hof">
-            <div class="hover">
-              <div class="card-title">
-                <div class="none"></div>
-                <p>Jane Doe</p>
-                <div class="down"></div>
-              </div>
-              <div class="features">
-                <ul>
-                  <li>Girls’ Captain 2017-18</li>
-                  <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
-                  <li>Silver Medal - Rajasthan State U-21</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card hof">
-            <div class="hover">
-              <div class="card-title">
-                <div class="none"></div>
-                <p>Jane Doe</p>
-                <div class="down"></div>
-              </div>
-              <div class="features">
-                <ul>
-                  <li>Girls’ Captain 2017-18</li>
-                  <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
-                  <li>Silver Medal - Rajasthan State U-21</li>
-                </ul>
+        </div> -->
+        <div class="card-container swiper-container hof-swiper">
+          <div class="swiper-wrapper">
+            <div class="card hof swiper-slide">
+              <div class="hover">
+                <div class="card-title">
+                  <div class="none"></div>
+                  <p>Jane Doe</p>
+                  <div class="down"></div>
+                </div>
+                <div class="features">
+                  <ul>
+                    <li>Girls’ Captain 2017-18</li>
+                    <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
+                    <li>Silver Medal - Rajasthan State U-21</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="card hof">
-            <div class="hover">
-              <div class="card-title">
-                <div class="none"></div>
-                <p>Jane Doe</p>
-                <div class="down"></div>
-              </div>
-              <div class="features">
-                <ul>
-                  <li>Girls’ Captain 2017-18</li>
-                  <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
-                  <li>Silver Medal - Rajasthan State U-21</li>
-                </ul>
+            <div class="card hof swiper-slide">
+              <div class="hover">
+                <div class="card-title">
+                  <div class="none"></div>
+                  <p>Jane Doe</p>
+                  <div class="down"></div>
+                </div>
+                <div class="features">
+                  <ul>
+                    <li>Girls’ Captain 2017-18</li>
+                    <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
+                    <li>Silver Medal - Rajasthan State U-21</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card hof">
-            <div class="hover">
-              <div class="card-title">
-                <div class="none"></div>
-                <p>Jane Doe</p>
-                <div class="down"></div>
+            <div class="card hof swiper-slide">
+              <div class="hover">
+                <div class="card-title">
+                  <div class="none"></div>
+                  <p>Jane Doe</p>
+                  <div class="down"></div>
+                </div>
+                <div class="features">
+                  <ul>
+                    <li>Girls’ Captain 2017-18</li>
+                    <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
+                    <li>Silver Medal - Rajasthan State U-21</li>
+                  </ul>
+                </div>
               </div>
-              <div class="features">
-                <ul>
-                  <li>Girls’ Captain 2017-18</li>
-                  <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
-                  <li>Silver Medal - Rajasthan State U-21</li>
-                </ul>
+            </div>
+            <div class="card hof swiper-slide">
+              <div class="hover">
+                <div class="card-title">
+                  <div class="none"></div>
+                  <p>Jane Doe</p>
+                  <div class="down"></div>
+                </div>
+                <div class="features">
+                  <ul>
+                    <li>Girls’ Captain 2017-18</li>
+                    <li>Gold Medal - BOSM ‘16, BOSM’ 18</li>
+                    <li>Silver Medal - Rajasthan State U-21</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -312,7 +326,6 @@
     <script>
       var swiper = new Swiper(".swiper-container", {
         cssMode: true,
-        loop: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
@@ -322,6 +335,26 @@
         },
         mousewheel: true,
         keyboard: true
+      });
+      var hofSwiper = new Swiper(".hof-swiper", {
+        breakpoints: {
+          // when window width is >= 600px
+          600: {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            cssMode: true,
+            // navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev"
+            // },
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            mousewheel: true,
+            keyboard: true
+          }
+        }
       });
     </script>
   </body>
