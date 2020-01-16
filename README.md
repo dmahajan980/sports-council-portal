@@ -1,5 +1,2 @@
-# sports-council-portal
-
----
-permalink: /index.html
----
+# SportsCouncilFront
+This is the Frontend for the Sports Council Webiste
